@@ -457,3 +457,10 @@ button:focus {
     .status-column { min-width: 60px; }
     .actions-column { min-width: 100px; }
 }
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
