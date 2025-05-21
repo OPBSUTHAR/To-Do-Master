@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Todo App with Timer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="background-content">
+    <header>
+      <h1>TodoList Master</h1>
+    </header>
+
+    <main class="container" style="align-content-center">
+      <!-- Notification -->
+      <div id="notification" class="notification" style="display:none;"></div>
+
+      <!-- Error message -->
+      <div id="errorMessage" class="error-message"></div>
+
+      <!-- Task Form -->
+      <form id="taskForm" autocomplete="off">
+        <div class="form-group">
+          <label for="taskText">Task Description<span class="required">*</span>:</label>
+          <input
+            type="text"
+            id="taskText"
+            name="taskText"
+            placeholder="Enter your task..."
+            required
+            maxlength="200"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="taskCategory">Category<span class="required">*</span>:</label>
+          <div class="custom-select">
+            <select id="taskCategory" name="taskCategory" required>
+              <option value="" disabled selected>Select a category</option>
+              <option value="Office">Office</option>
+              <option value="School">School</option>
+              <option value="Factory">Factory</option>
+              <option value="Home">Home</option>
+              <option value="Personal">Personal</option>
+              <option value="Shopping">Shopping</option>
+              <option value="Health">Health</option>
+              <option value="Fitness">Fitness</option>
+              <option value="Finance">Finance</option>
+              <option value="Travel">Travel</option>
+              <option value="Hobby">Hobby</option>
+              <option value="Social">Social</option>
+              <option value="Study">Study</option>
+              <option value="Project">Project</option>
+              <option value="Meeting">Meeting</option>
+              <option value="Event">Event</option>
+              <option value="Chores">Chores</option>
+              <option value="Errands">Errands</option>
+              <option value="Work">Work</option>
+              <option value="Volunteering">Volunteering</option>
+              <option value="Creative">Creative</option>
+              <option value="Maintenance">Maintenance</option>
+              <option value="Gardening">Gardening</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="taskPriority">Priority:</label>
+          <div class="custom-select">
+            <select id="taskPriority" name="taskPriority">
+              <option value="Low">Low</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="taskTimer">Timer (minutes, optional):</label>
+          <input
+            type="number"
+            id="taskTimer"
+            name="taskTimer"
+            min="1"
+            placeholder="Enter minutes"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Task</button>
+      </form>
+
+      <!-- Button to open task table pop-up -->
+      <div class="action-buttons">
+        <button id="openTaskTableBtn" class="btn btn-secondary">View Task Table</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Pop-up for task table -->
+  <div id="taskTablePopup" class="popup" style="display:none;">
+    <div class="popup-content">
+      <span class="close-popup">×</span>
+      <h2>All Tasks</h2>
+      <div class="popup-actions">
+        <button id="deleteSelectedBtn" class="btn btn-danger" disabled>Delete Selected</button>
+        <button id="selectAllBtn" class="btn btn-secondary">Select All</button>
+      </div>
+      <div class="table-wrapper">
+        <table class="task-table">
+          <thead>
+            <tr>
+              <th class="checkbox-column"><input type="checkbox" id="selectAllCheckbox"></th>
+              <th class="id-column">ID</th>
+              <th class="description-column">Description</th>
+              <th class="category-column">Category</th>
+              <th class="priority-column">Priority</th>
+              <th class="timer-column">Timer</th>
+              <th class="status-column">Status</th>
+              <th class="actions-column">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="taskTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <audio id="alarmAudio" src="dhoom tune.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
