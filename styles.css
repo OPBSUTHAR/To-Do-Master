@@ -37,15 +37,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Flexbox */
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Form */ 
-
 /* Header */
 h1 {
     text-align: center;
@@ -112,6 +103,8 @@ select:focus {
     -moz-appearance: none;
     padding-right: 2rem;
     cursor: pointer;
+    background: linear-gradient(to right, #2a5298, #1e3c72);
+    color: #fff;
 }
 
 .custom-select::after {
@@ -139,29 +132,29 @@ select:focus {
     color: #fff;
 }
 
-#taskCategory option[value="Office"] { background: linear-gradient(to right, #ff6b6b, #ee5253); }
-#taskCategory option[value="School"] { background: linear-gradient(to right, #4facfe, #00f2fe); }
-#taskCategory option[value="Factory"] { background: linear-gradient(to right, #ff9f43, #ee5253); }
-#taskCategory option[value="Home"] { background: linear-gradient(to right, #a8e063, #56ab2f); }
-#taskCategory option[value="Personal"] { background: linear-gradient(to right, #feca57, #ff9f43); }
-#taskCategory option[value="Shopping"] { background: linear-gradient(to right, #ff6b6b, #feca57); }
-#taskCategory option[value="Health"] { background: linear-gradient(to right, #48dbfb, #1dd1a1); }
-#taskCategory option[value="Fitness"] { background: linear-gradient(to right, #1dd1a1, #10ac84); }
-#taskCategory option[value="Finance"] { background: linear-gradient(to right, #54a0ff, #00d2d3); }
-#taskCategory option[value="Travel"] { background: linear-gradient(to right, #5f27cd, #54a0ff); }
-#taskCategory option[value="Hobby"] { background: linear-gradient(to right, #ff9ff3, #feca57); }
-#taskCategory option[value="Social"] { background: linear-gradient(to right, #ff6b6b, #ff9ff3); }
-#taskCategory option[value="Study"] { background: linear-gradient(to right, #00d2d3, #54a0ff); }
-#taskCategory option[value="Project"] { background: linear-gradient(to right, #5f27cd, #ff6b6b); }
-#taskCategory option[value="Meeting"] { background: linear-gradient(to right, #48dbfb, #5f27cd); }
-#taskCategory option[value="Event"] { background: linear-gradient(to right, #ff9f43, #feca57); }
-#taskCategory option[value="Chores"] { background: linear-gradient(to right, #a8e063, #ff9f43); }
-#taskCategory option[value="Errands"] { background: linear-gradient(to right, #ff6b6b, #a8e063); }
-#taskCategory option[value="Work"] { background: linear-gradient(to right, #54a0ff, #ff6b6b); }
-#taskCategory option[value="Volunteering"] { background: linear-gradient(to right, #1dd1a1, #48dbfb); }
-#taskCategory option[value="Creative"] { background: linear-gradient(to right, #feca57, #ff9ff3); }
-#taskCategory option[value="Maintenance"] { background: linear-gradient(to right, #00d2d3, #1dd1a1); }
-#taskCategory option[value="Gardening"] { background: linear-gradient(to right, #a8e063, #56ab2f); }
+#taskCategory option[value="Office"] { background: linear-gradient(to right, #ff6b6b, #ee5253); color: #1a1a1a; }
+#taskCategory option[value="School"] { background: linear-gradient(to right, #4facfe, #00f2fe); color: #1a1a1a; }
+#taskCategory option[value="Factory"] { background: linear-gradient(to right, #ff9f43, #ee5253); color: #1a1a1a; }
+#taskCategory option[value="Home"] { background: linear-gradient(to right, #a8e063, #56ab2f); color: #1a1a1a; }
+#taskCategory option[value="Personal"] { background: linear-gradient(to right, #feca57, #ff9f43); color: #1a1a1a; }
+#taskCategory option[value="Shopping"] { background: linear-gradient(to right, #ff6b6b, #feca57); color: #1a1a1a; }
+#taskCategory option[value="Health"] { background: linear-gradient(to right, #48dbfb, #1dd1a1); color: #1a1a1a; }
+#taskCategory option[value="Fitness"] { background: linear-gradient(to right, #1dd1a1, #10ac84); color: #1a1a1a; }
+#taskCategory option[value="Finance"] { background: linear-gradient(to right, #54a0ff, #00d2d3); color: #1a1a1a; }
+#taskCategory option[value="Travel"] { background: linear-gradient(to right, #5f27cd, #54a0ff); color: #1a1a1a; }
+#taskCategory option[value="Hobby"] { background: linear-gradient(to right, #ff9ff3, #feca57); color: #1a1a1a; }
+#taskCategory option[value="Social"] { background: linear-gradient(to right, #ff6b6b, #ff9ff3); color: #1a1a1a; }
+#taskCategory option[value="Study"] { background: linear-gradient(to right, #00d2d3, #54a0ff); color: #1a1a1a; }
+#taskCategory option[value="Project"] { background: linear-gradient(to right, #5f27cd, #ff6b6b); color: #1a1a1a; }
+#taskCategory option[value="Meeting"] { background: linear-gradient(to right, #48dbfb, #5f27cd); color: #1a1a1a; }
+#taskCategory option[value="Event"] { background: linear-gradient(to right, #ff9f43, #feca57); color: #1a1a1a; }
+#taskCategory option[value="Chores"] { background: linear-gradient(to right, #a8e063, #ff9f43); color: #1a1a1a; }
+#taskCategory option[value="Errands"] { background: linear-gradient(to right, #ff6b6b, #a8e063); color: #1a1a1a; }
+#taskCategory option[value="Work"] { background: linear-gradient(to right, #54a0ff, #ff6b6b); color: #1a1a1a; }
+#taskCategory option[value="Volunteering"] { background: linear-gradient(to right, #1dd1a1, #48dbfb); color: #1a1a1a; }
+#taskCategory option[value="Creative"] { background: linear-gradient(to right, #feca57, #ff9ff3); color: #1a1a1a; }
+#taskCategory option[value="Maintenance"] { background: linear-gradient(to right, #00d2d3, #1dd1a1); color: #1a1a1a; }
+#taskCategory option[value="Gardening"] { background: linear-gradient(to right, #a8e063, #56ab2f); color: #1a1a1a; }
 
 /* Gradient for Priority Options */
 #taskPriority option {
@@ -169,9 +162,9 @@ select:focus {
     color: #fff;
 }
 
-#taskPriority option[value="Low"] { background: linear-gradient(to right, #4caf50, #a8e063); }
-#taskPriority option[value="Medium"] { background: linear-gradient(to right, #ff9800, #feca57); }
-#taskPriority option[value="High"] { background: linear-gradient(to right, #f44336, #ff6b6b); }
+#taskPriority option[value="Low"] { background: linear-gradient(to right, #4caf50, #a8e063); color: #1a1a1a; }
+#taskPriority option[value="Medium"] { background: linear-gradient(to right, #ff9800, #feca57); color: #1a1a1a; }
+#taskPriority option[value="High"] { background: linear-gradient(to right, #f44336, #ff6b6b); color: #1a1a1a; }
 
 /* Buttons */
 .btn {
