@@ -45,8 +45,3 @@ The **Todo App with Timer** is a web-based task manager built with HTML, CSS, an
 ### 📋 Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge).
 - No installation or dependencies required.
-
-### 📥 Getting Started
-1. **Clone or Download:**
-   ```bash
-   git clone https://github.com/your-username/todo-app-timer.git
